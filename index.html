@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleseat.css">
+    <title>portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <div class="header-txt">portfolio</div>
+        <div class="container">
+            <div class="hamburger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#strength">Strength</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="menu-cta">
+                    <a href="#contact">Contact Me &#x21C0;</a>
+                </div>
+            </nav>
+        </div>
+        <nav class="pc-nav">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#strength">Strength</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="first-view">
+            <div class="first-view-flex">
+                <h1>"使いやすさ"を意識した<br>Webサイト制作</h1>
+                <p>HTML/CSS/JavaScriptを用いて、<br>スマホ対応を重視した<br>Webサイトを制作しています</p>
+                <div class="main-button">
+                    <a href="#" class="btn">制作実績を見る</a>
+                    <a href="#" class="btn">お問い合わせ</a>
+                </div>
+            </div>
+            <img src="./img/first_view.html.png" alt="firstview">
+        </section>
+        <section id="about" class="about fade-in">
+            <h2>About</h2>
+            <div class="about-flex">
+                <div>
+                    <h4>Profile</h4> 
+                    <p>情報系高校でITやデザインを学習後、<br>現在は経営学を学びながらWeb制作を行なっています。<br><br>見た目だけではなく、<br>"使いやすさ"や"導線設計"を意識した<br>サイト制作を心がけています。<br>ユーザーが迷わず行動できる<br>UI/UX設計を意識しています。</p>
+                </div>
+                <div class="information">
+                    <h4>Information</h4>
+                    <ul>
+                        <li>情報系高校卒業</li>
+                        <li>経営学部在学中</li>
+                        <li>HTML/CSS/JavaScript学習中</li>
+                        <li>レスポンシブ対応可能</li>
+                        <li>ITパスポート、基本情報取得済</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="skills fade-in">
+            <h2>Skills</h2>
+            <div class="skills-flex">
+                <div class="skills-item fade-up delay-1">
+                    <h3>HTML/CSS</h3>
+                    <ul>
+                        <li>レスポンシブ対応</li>
+                        <li>Flexbox</li>
+                        <li>レイアウト設計</li>
+                        <li>LP制作可能</li>
+                    </ul> 
+                </div>
+                <div class="skills-item fade-up delay-2">
+                    <h3>JavaScript</h3>
+                    <ul>
+                        <li>ハンバーガーメニュー</li>
+                        <li>フェードイン</li>
+                        <li>DOM操作</li>
+                    </ul> 
+                </div>
+                <div class="skills-item fade-up delay-3">
+                    <h3>Design</h3>
+                    <ul>
+                        <li>Figma</li>
+                        <li>UI/UX設計</li>
+                        <li>導線設計</li>
+                    </ul> 
+                </div>
+            </div>
+            
+        </section>
+        <section id="works" class="works fade-in">
+            <h2>Works</h2>
+            <div class="works-item">
+                <img src="./img/pallet.png" alt="cafe pallet">
+                <div class="works-item-flex">
+                    <h3>Cafe Pallet</h3>
+                    <p class="works-sub">20~30代向けのカフェを想定し<br>スマホUXと予約導線を重視して制作</p>
+                    <div class="point-box">
+                        <h4>工夫点</h4>
+                        <div class="point-item">&check;スマホ固定CTAを実装</div>
+                        <div class="point-item">&check;レスポンシブ対応</div>
+                        <div class="point-item">&check;IntersectionObserverによる演出</div>
+                        <div class="point-item">&check;ユーザー動線を意識したUI設計</div>
+                    </div>
+                    <h4>担当範囲</h4>
+                    <ul>
+                        <li>デザイン</li>
+                        <li>コーディング</li>
+                        <li>レスポンシブ対応</li>
+                    </ul>
+                    <p>制作期間：2026/4日</p>
+                    <div class="works-flex">
+                        <p class="works-lang">HTML</p>
+                        <p class="works-lang">CSS</p>
+                        <p class="works-lang">JavaScript</p>
+                    </div>
+                    <div class="works-btn">
+                        <a href="#" class="btn">View Site</a>
+                        <a href="#" class="btn-sub">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="strength" class="strength fade-in">
+            <h2>Strength</h2>
+            <div class="strength-flex">
+                <div class="strength-item">
+                    <div class="strength-num">
+                        1
+                    </div>
+                    <h3>スマホ対応を意識した設計</h3>
+                    <p>レスポンシブデザインを基本とし、あらゆるデバイスで快適な閲覧体験を提供します。</p>
+                </div>
+                <div class="strength-item">
+                    <div class="strength-num">
+                        2
+                    </div>
+                    <h3>導線を考えたUI/UX</h3>
+                    <p>ユーザーの行動を想定し、目的達成までの導線を分かりやすく設計します。</p>
+                </div>
+                <div class="strength-item">
+                    <div class="strength-num">
+                        3
+                    </div>
+                    <h3>丁寧な修正対応</h3>
+                    <p>フィードバックに対して迅速かつ丁寧に対応し、理想のサイトを実現します。</p>
+                </div>
+            </div>
+            
+        </section>
+        <section id="contact" class="contact fade-in">
+            <h2>Contact</h2>
+            <p>お仕事のご依頼・ご相談は<br>以下からお気軽にお問い合わせください。</p>
+            <div class="contact-flex">
+                <a href="#" class="contact-btn">GitHub</a>
+                <a href="#" class="contact-btn">CrowdWorks</a>
+                <a href="#" class="contact-btn">Email</a>
+            </div>
+            <a href="#" class="btn">お問い合わせフォーム</a>
+        </section>
+        <script src="script.js"></script>
+        <footer>
+            
+        </footer>
+    </main>
+    <p>&copy; 2026 portfolio</p>
+</body>
+</html>

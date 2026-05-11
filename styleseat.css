@@ -109,7 +109,7 @@ main{
     z-index: 999;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    background: rgba(95,75,139,0.95);
+    background: #5f4b8b;
     border-left: 1px solid rgba(255,255,255,0.2);
     box-shadow: -10px 0 30px rgba(0,0,0,0.1);
     overflow-y: auto;

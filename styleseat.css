@@ -5,6 +5,7 @@ body{
     font-family: 'Noto Sans JP', sans-serif;
     background: linear-gradient(180deg,hwb(0 100% 0%),#fbe6fb,#e5dffd);
     color: #585858;
+    overflow-x: hidden;
 }
 body.menu-open{
     overflow: hidden;
@@ -522,6 +523,8 @@ footer{
     }
     .nav-menu{
         width: 100%;
+        right: 0;
+        left: 0;
     }
     .hamburger-menu{
         display: block;
@@ -608,5 +611,13 @@ footer{
         width: 100%;
         box-sizing: border-box;
         margin-bottom: 20px;
+    }
+    .contact-btn{
+        width: 80%;
+        align-items: center;
+        gap: 15px;
+        flex-direction: column;
+        box-sizing: border-box;
+        text-align: center;
     }
 }

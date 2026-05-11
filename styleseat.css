@@ -97,23 +97,24 @@ main{
 
 .nav-menu {
     box-sizing: border-box;
-  position: fixed;
-  top: 0;
-  right: -100%;
-  width: 80%;
-  max-width: 320px;
-  height: 100vh;
-  padding: 100px 24px 40px;
-  transform: translateX(100%); 
-  transition:  0.5s ease;
-  display: flex;
-  flex-direction: column;
-  z-index: 999;
-  backdrop-filter: blur(12px);
-  background: rgba(95,75,139,0.95);
-  border-left: 1px solid rgba(255,255,255,0.2);
-  box-shadow: -10px 0 30px rgba(0,0,0,0.1);
-  overflow-y: auto;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 85%;
+    max-width: 320px;
+    height: 100vh;
+    padding: 100px 24px 40px;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: rgba(95,75,139,0.95);
+    border-left: 1px solid rgba(255,255,255,0.2);
+    box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: right 0.5s ease;
 }
 .nav-menu li{
     list-style: none;
@@ -124,7 +125,6 @@ main{
 }
 
 .nav-menu.active {
-  transform: translateX(0); /* 表示 */
   right: 0;
 } 
 .nav-menu.active li{
@@ -523,8 +523,7 @@ footer{
         padding: 15px 20px;
     }
     .nav-menu{
-        width: 100%;
-        right: 0;
+        width: 85%;
     }
     .hamburger-menu{
         display: block;
@@ -613,11 +612,14 @@ footer{
         margin-bottom: 20px;
     }
     .contact-btn{
-        width: 80%;
-        align-items: center;
-        gap: 15px;
-        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
         box-sizing: border-box;
         text-align: center;
+    }
+    .contact-flex{
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
     }
 }

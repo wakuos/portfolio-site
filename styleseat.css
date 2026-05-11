@@ -99,7 +99,7 @@ main{
     box-sizing: border-box;
   position: fixed;
   top: 0;
-  right: 0;
+  right: -100%;
   width: 80%;
   max-width: 320px;
   height: 100vh;
@@ -125,6 +125,7 @@ main{
 
 .nav-menu.active {
   transform: translateX(0); /* 表示 */
+  right: 0;
 } 
 .nav-menu.active li{
     opacity: 1;

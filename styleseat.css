@@ -21,7 +21,7 @@ header{
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255,255,255,0.3);
     transition: all 0.3s ease;
-    z-index: 1000;
+    z-index: 100;
 }
 header.scrolled{
     padding: 10px 0;
@@ -48,7 +48,7 @@ main{
     opacity: 0;
     visibility: hidden;
     transition: 0.3s;
-    z-index: 998;
+    z-index: 997;
 }
 .overlay.active{
     opacity: 1;

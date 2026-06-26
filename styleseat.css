@@ -6,17 +6,19 @@ body{
     background: linear-gradient(180deg,hwb(0 100% 0%),#fbe6fb,#e5dffd);
     color: #585858;
     overflow-x: hidden;
+    margin: 0;
 }
 body.menu-open{
     overflow: hidden;
 }
 header{
     display: flex;
-    padding: 20px 0;
+    padding: 15px 0;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255,255,255,0.3);
@@ -48,7 +50,7 @@ main{
     opacity: 0;
     visibility: hidden;
     transition: 0.3s;
-    z-index: 997;
+    z-index: 1;
 }
 .overlay.active{
     opacity: 1;
@@ -62,7 +64,7 @@ main{
   width: 30px;
   height: 22px;
   cursor: pointer;
-  z-index: 1001;
+  z-index: 10000;
 }
 
 .hamburger-menu .line {
@@ -106,7 +108,7 @@ main{
     padding: 100px 24px 40px;
     display: flex;
     flex-direction: column;
-    z-index: 999;
+    z-index: 9999;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     background: #5f4b8b;
@@ -519,14 +521,15 @@ footer{
     h2{
         font-size: 2em;
     }
-    header{
-        padding: 15px 20px;
+    .header-txt{
+        margin-left: 20px;
     }
     .nav-menu{
         width: 85%;
     }
     .hamburger-menu{
         display: block;
+        right: 20px;
     }
     .pc-nav{
         display: none;
